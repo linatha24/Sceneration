@@ -1,0 +1,102 @@
+.footer {
+            background: #2c3e50;
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer h4 {
+            font-family: "Acne Studios Circle Test Light";
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        .footer p{
+            font-size: 1.2rem;;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 20px;
+            transition: color 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: #3498db;
+        }
+        .footer{
+            background: 
+                        url('../images/bg1.png') center/cover;
+            color:#ffffff;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #ffffff;
+            font-size: 2rem;
+            
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .feature-grid,
+            .mission-vision {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .stats-grid,
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }

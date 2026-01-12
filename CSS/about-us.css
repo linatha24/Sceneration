@@ -1,0 +1,286 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Acne Studios Circle Test Light";
+            overflow-x: hidden;
+        }
+        
+        /* Page Header */
+        .page-header {
+            height: 35vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .page-header h1 {
+            font-family: "Acne Studios Circle Test Light";
+            font-size: 4rem;
+            font-weight: 700;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .page-header p {
+            font-size: 1.3rem;
+            margin-top: 20px;
+            animation: fadeInUp 1.2s ease;
+        }
+        
+        /* About Section */
+        .about-section {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+        
+        .about-image {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-text h2 {
+            font-family: "Acne Studios Circle Test Light";
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 50px;
+        }
+        
+        .about-text p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+        }
+        
+        .about-text .highlight {
+            color: #3498db;
+            font-weight: 600;
+        }
+        /* Mission, Vision, Values */
+         .section-title {
+            font-family: "Acne Studios Circle Test Light";
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            color: #2c3e50;
+        }    
+        .mission-section {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .mission-vision {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .mission-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 50px 35px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mission-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            /* background: linear-gradient(90deg, #3498db, #2ecc71); */
+        }
+        
+        .mission-card:hover {
+            transform: translateY(-10px);
+            border-color: #3498db;
+            box-shadow: 0 15px 40px rgba(52, 152, 219, 0.15);
+            background: white;
+        }
+        
+        .mission-icon {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            color: white;
+            font-size: 2.2rem;
+        }
+        
+        .mission-card h4 {
+            font-family: "Acne Studios Circle Test Light";
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .mission-card p {
+            color: #666;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        
+        /* Statistics */
+        .stats-section {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);;
+            padding: 80px 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            text-align: center;
+        }
+        
+        .stat-item {
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        
+        .stat-item:hover {
+            background: #ffffff;
+            transform: scale(1.05);
+        }
+        
+        .stat-item h3 {
+            font-family: "Acne Studios Circle Test Light";
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            color: #3498db;
+            font-weight: 100;
+        }
+        
+        .stat-item p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        
+        /* Team Section */
+        .team-section {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .team-member {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+        
+        .team-member img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .team-info {
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .team-info h5 {
+            font-family: "Acne Studios Circle Test Light";
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .team-info p {
+            color: #3498db;
+            font-size: 0.95rem;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .feature-grid,
+            .mission-vision {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .stats-grid,
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }

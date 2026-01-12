@@ -1,0 +1,304 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family:  "Acne Studios Circle Test Light";
+            overflow-x: hidden;
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 90vh;
+            overflow: hidden;
+        }
+        
+        .hero-slider {
+            position: relative;
+            height: 100%;
+        }
+        
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero-slide.active {
+            opacity: 1;
+        }
+        
+        .hero-slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            z-index: 1;
+        }
+        
+        .slide-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-content h1 {
+            font-family:  "Acne Studios Circle Test Light";
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero-btn {
+            background: white;
+            color: #2c3e50;
+            padding: 12px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+            animation: fadeInUp 1.2s ease;
+        }
+        
+        .hero-btn:hover {
+            background: #3498db;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        /* Slider Navigation */
+        .slider-nav {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            display: flex;
+            gap: 15px;
+        }
+        
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            border: 2px solid white;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .slider-dot.active {
+            background: white;
+            transform: scale(1.2);
+        }
+        
+        .slider-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 3;
+            background: rgba(255,255,255,0.3);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .slider-arrow:hover {
+            background: rgba(255,255,255,0.5);
+        }
+        
+        .slider-arrow.prev {
+            left: 30px;
+        }
+        
+        .slider-arrow.next {
+            right: 30px;
+        }
+        
+        /* Gallery Section */
+        .gallery-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .gallery-intro {
+            display: flex;
+            align-items: center;
+            margin-bottom: 60px;
+            gap: 40px;
+        }
+        
+        .gallery-intro img {
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        .gallery-text {
+            flex: 1;
+        }
+        
+        .gallery-text h2 {
+            font-family: "Acne Studios Circle Test Light";
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .gallery-text p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        /* Featured Artworks */
+        .featured-section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .section-title {
+            font-family: "Acne Studios Circle Test Light";
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            color: #2c3e50;
+        }
+        
+        .artwork-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            margin-bottom: 30px;
+        }
+        
+        .artwork-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+        
+        .artwork-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .artwork-info {
+            padding: 25px;
+        }
+        
+        .artwork-info h3 {
+            font-family: "Acne Studios Circle Test Light";
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .artwork-info p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Exhibition Section */
+        .exhibition-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .exhibition-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+        
+        .exhibition-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .exhibition-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .exhibition-info {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .exhibition-btn {
+            background: #2c3e50;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            transition: all 0.3s;
+        }
+        
+        .exhibition-btn:hover {
+            background: #3498db;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .gallery-intro {
+                flex-direction: column;
+            }
+            
+            .gallery-intro img {
+                width: 100%;
+            }
+        }
