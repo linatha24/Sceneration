@@ -10,7 +10,7 @@
         }
     /* Hero */
     .artworks-hero {
-    background: url('/images/a-bg.png');
+    background: url('../images/a-bg.png');
     color: black;
     padding: 100px 0 60px;
     margin-top: 70px;
