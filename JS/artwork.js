@@ -26,7 +26,7 @@
                 date: "August 1511",
                 category: "renaissance",
                 description: "A fresco depicting philosophers and scholars of ancient Greece. Represents the marriage of art, philosophy, and science.",
-                image: "https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=600"
+                image: "https://i.pinimg.com/1200x/d2/40/d4/d240d456c4971c7f0a4fc2ef27adc889.jpg"
             },
             
             // Impressionism
@@ -37,7 +37,7 @@
                 date: "June 1889",
                 category: "impressionism",
                 description: "A swirling night sky over a French village. Van Gogh's masterpiece captures emotion through bold brushstrokes and vibrant colors.",
-                image: "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=600"
+                image: "https://i.pinimg.com/1200x/43/ed/71/43ed71c8fa1ffd98a7c064fb39515f2b.jpg"
             },
             {
                 id: 5,
@@ -46,7 +46,7 @@
                 date: "November 1916",
                 category: "impressionism",
                 description: "Part of a series of approximately 250 oil paintings depicting Monet's flower garden at Giverny, capturing the play of light on water.",
-                image: "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=600"
+                image: "https://i.pinimg.com/736x/79/1d/6f/791d6f168ca89f7fd8ee83947e197cc8.jpg"
             },
             {
                 id: 6,
@@ -55,7 +55,7 @@
                 date: "May 1876",
                 category: "impressionism",
                 description: "A vibrant scene of Parisian life showing people dancing and socializing. Celebrates the joy of modern urban leisure.",
-                image: "https://images.unsplash.com/photo-1549887534-1541e9326642?w=600"
+                image: "https://i.pinimg.com/1200x/f6/30/2e/f6302e9aca5472e575db00cbb0725751.jpg"
             },
             
             // Modern Art
@@ -104,7 +104,7 @@
                 date: "April 1999",
                 category: "contemporary",
                 description: "A monumental stainless steel sculpture that celebrates childhood joy and nostalgia while questioning the nature of art and value.",
-                image: "https://images.unsplash.com/photo-1566127444979-b3d2b3c49f93?w=600"
+                image: "https://i.pinimg.com/736x/ce/bf/3c/cebf3c560ae65c775ec042f7525dc7b1.jpg"
             },
             {
                 id: 12,
